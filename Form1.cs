@@ -28,10 +28,14 @@ namespace pryTaquillaDeCine
             {                
                 boleto = new clsEstudiante(txtTipo.Text);
             }
+            else if (cmbTipoBoleto.Text == "Adulto Mayor")
+            {
+                boleto = new BoletoAdultoMayor(txtTipo.Text);
+            }
 
 
             //Verificacion que el objeto no quede nulo para proceder a calcular
-            if(boleto!= null)
+            if (boleto!= null)
             {
                 double total = boleto.CalcularBoletoFinal();
                 MessageBox.Show("Bienvenido " + name + " del tipo " + cmbTipoBoleto.Text + 

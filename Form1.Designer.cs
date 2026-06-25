@@ -42,11 +42,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 9);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(88, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 34);
+            this.label1.Size = new System.Drawing.Size(286, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cinemas Huejutlas";
             // 
