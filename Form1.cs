@@ -26,7 +26,11 @@ namespace pryTaquillaDeCine
             // Verificacion del combobox
             if(cmbTipoBoleto.Text == "Estudiante")
             {                
-                boleto = new clsEstudiante(txtTipo.Text);
+                boleto = new clsEstudiantes(txtTipo.Text);
+            }
+            else if (cmbTipoBoleto.Text == "Publico en General")
+            {
+                boleto = new clsGeneral();
             }
             else if (cmbTipoBoleto.Text == "Adulto Mayor")
             {
@@ -56,12 +60,23 @@ namespace pryTaquillaDeCine
             {
                 lblTipoUsuario.Text = "Ingrese su inapam";
             }
+            else if (cmbTipoBoleto.Text == "Publico en General")
+            {
+                lblTipoUsuario.Visible = false;
+                txtTipo.Visible = false;
+                txtTipo.Clear();
+            }
             else
             {
                 lblTipoUsuario.Visible = false;
                 txtTipo.Visible = false;
                 txtTipo.Clear();
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
