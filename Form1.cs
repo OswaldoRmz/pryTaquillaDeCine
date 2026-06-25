@@ -26,7 +26,7 @@ namespace pryTaquillaDeCine
             // Verificacion del combobox
             if(cmbTipoBoleto.Text == "Estudiante")
             {                
-                boleto = new clsEstudiante(txtTipo.Text);
+                boleto = new clsEstudiantes(txtTipo.Text);
             }
 
 

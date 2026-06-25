@@ -139,6 +139,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.IsMdiContainer = true;
             this.Name = "fmrPrincipal";
             this.Text = "Form1";
